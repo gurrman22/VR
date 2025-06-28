@@ -3,8 +3,8 @@ $Version = 1
 
 # Set image file names for desktop background and lock screen
 # leave blank if you wish not to set either of one
-$WallpaperIMG = "wallpaper-scloud-rocket.jpg"
-$LockscreenIMG = "scloud-banner.jpg"
+$WallpaperIMG = "Desktop.png"
+$LockscreenIMG = "lockscreen.png"
 
 Start-Transcript -Path "$env:ProgramData\Microsoft\IntuneManagementExtension\Logs\$PackageName-install.log" -Force
 $ErrorActionPreference = "Stop"
@@ -20,9 +20,9 @@ $LockScreenUrl = "LockScreenImageUrl"
 $StatusValue = "1"
 
 
-$url = "https://raw.githubusercontent.com/gurrman22/VR/refs/heads/main/Background.png"
+$url1 = "https://raw.githubusercontent.com/gurrman22/VR/refs/heads/main/Background.png"
 $DesktopImageValue = "C:\MDM\Desktop.png"
-$url = "https://raw.githubusercontent.com/gurrman22/VR/refs/heads/main/Background.png"
+$url2 = "https://raw.githubusercontent.com/gurrman22/VR/refs/heads/main/Background.png"
 $LockscreenImageValue = "C:\MDM\Lockscreen.png"
 $directory = "C:\MDM\"
 
@@ -33,8 +33,8 @@ If ((Test-Path -Path $directory) -eq $false)
 }
 
 $wc = New-Object System.Net.WebClient
-$wc.DownloadFile($url, $DesktopImageValue)
-$wc.DownloadFile($url, $LockscreenImageValue)
+$wc.DownloadFile($url1, $DesktopImageValue)
+$wc.DownloadFile($url2, $LockscreenImageValue)
 
 # local path of images
 $WallpaperLocalIMG = "C:\MDM\Desktop.png"
