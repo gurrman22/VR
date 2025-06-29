@@ -1,7 +1,7 @@
-﻿$url1 = "https://raw.githubusercontent.com/gurrman22/VR/refs/heads/main/Background.png"
-$DesktopImageValue = "C:\MDM\Desktop.png"
-$url2 = "https://raw.githubusercontent.com/gurrman22/VR/refs/heads/main/Background.png"
-$LockscreenImageValue = "C:\MDM\Lockscreen.png"
+﻿$url1 = "https://raw.githubusercontent.com/gurrman22/VR/refs/heads/main/Background.jpg"
+$DesktopImageValue = "C:\MDM\Desktop.jpg"
+$url2 = "https://raw.githubusercontent.com/gurrman22/VR/refs/heads/main/Background.jpg"
+$LockscreenImageValue = "C:\MDM\Lockscreen.jpg"
 $directory = "C:\MDM\"
 
 
